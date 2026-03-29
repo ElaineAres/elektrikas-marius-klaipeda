@@ -9,8 +9,11 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "index.html"
+      - file: "content/home.json"
         label: "Home Page"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Title", name: "heroTitle", widget: "string", required: false }
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "string", required: false }
+          - { label: "Hero Description", name: "heroDescription", widget: "text", required: false }
+          - { label: "Hero Button Text", name: "heroButtonText", widget: "string", required: false }
