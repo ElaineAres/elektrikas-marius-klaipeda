@@ -1,120 +1,20 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: ElaineAres/elektrikas-marius-klaipeda
   branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "pages"
-    label: "Puslapiai"
+  - name: "site"
+    label: "Site"
     files:
-      - file: "content/home.json"
-        label: "Pagrindinis puslapis"
-        name: "home"
+      - file: "content/site.json"
+        label: "Main content"
+        name: "main"
         fields:
-          - { label: "Meta title", name: "metaTitle", widget: "string", required: false }
-          - { label: "Meta description", name: "metaDescription", widget: "text", required: false }
-          - { label: "Social description", name: "socialDescription", widget: "text", required: false }
-
-          - { label: "Brand title", name: "brandTitle", widget: "string", required: false }
-          - { label: "Brand subtitle", name: "brandSubtitle", widget: "string", required: false }
-
-          - { label: "Navigacija - Paslaugos", name: "navServices", widget: "string", required: false }
-          - { label: "Navigacija - Kodėl verta", name: "navWhy", widget: "string", required: false }
-          - { label: "Navigacija - Kontaktai", name: "navContact", widget: "string", required: false }
-
-          - { label: "Mygtukas - Skambinti", name: "callText", widget: "string", required: false }
-          - { label: "Mygtukas - Skambinti dabar", name: "callNowText", widget: "string", required: false }
-          - { label: "Mygtukas - Daugiau paslaugų", name: "moreServicesText", widget: "string", required: false }
-          - { label: "Mygtukas - El. paštas", name: "emailButtonText", widget: "string", required: false }
-
-          - { label: "Hero eyebrow", name: "heroEyebrow", widget: "string", required: false }
-          - { label: "Hero title pradžia", name: "heroTitleLead", widget: "string", required: false }
-          - { label: "Hero title paryškinta", name: "heroTitleHighlight", widget: "string", required: false }
-          - { label: "Hero title pabaiga", name: "heroTitleTail", widget: "string", required: false }
-          - { label: "Hero aprašymas", name: "heroDescription", widget: "text", required: false }
-
-          - label: "Hero žymės"
-            name: "heroChips"
-            widget: "list"
-            required: false
-            field: { label: "Žymė", name: "item", widget: "string" }
-
-          - { label: "Showcase title", name: "showcaseTitle", widget: "string", required: false }
-          - { label: "Showcase aprašymas", name: "showcaseDescription", widget: "text", required: false }
-
-          - label: "Showcase kortelės"
-            name: "showcaseCards"
-            widget: "list"
-            required: false
-            fields:
-              - { label: "Pavadinimas", name: "title", widget: "string", required: false }
-              - { label: "Tekstas", name: "text", widget: "text", required: false }
-
-          - { label: "Paslaugų eyebrow", name: "servicesEyebrow", widget: "string", required: false }
-          - { label: "Paslaugų title", name: "servicesTitle", widget: "string", required: false }
-          - { label: "Paslaugų aprašymas", name: "servicesDescription", widget: "text", required: false }
-
-          - label: "Paslaugos"
-            name: "servicesItems"
-            widget: "list"
-            required: false
-            fields:
-              - { label: "Pavadinimas", name: "title", widget: "string", required: false }
-              - { label: "Tekstas", name: "text", widget: "text", required: false }
-
-          - label: "Statistika"
-            name: "statsItems"
-            widget: "list"
-            required: false
-            fields:
-              - { label: "Reikšmė", name: "value", widget: "string", required: false }
-              - { label: "Pavadinimas", name: "label", widget: "string", required: false }
-
-          - { label: "Kodėl verta eyebrow", name: "whyEyebrow", widget: "string", required: false }
-          - { label: "Kodėl verta title", name: "whyTitle", widget: "string", required: false }
-          - { label: "Kodėl verta aprašymas", name: "whyDescription", widget: "text", required: false }
-
-          - label: "Kodėl verta kortelės"
-            name: "whyItems"
-            widget: "list"
-            required: false
-            fields:
-              - { label: "Ikona", name: "icon", widget: "string", required: false }
-              - { label: "Pavadinimas", name: "title", widget: "string", required: false }
-              - { label: "Tekstas", name: "text", widget: "text", required: false }
-
-          - { label: "Kontaktų eyebrow", name: "contactEyebrow", widget: "string", required: false }
-          - { label: "Kontaktų title", name: "contactTitle", widget: "string", required: false }
-          - { label: "Kontaktų aprašymas", name: "contactDescription", widget: "text", required: false }
-          - { label: "Telefono label", name: "phoneLabel", widget: "string", required: false }
-          - { label: "Telefono aprašymas", name: "phoneDescription", widget: "text", required: false }
-          - { label: "Email label", name: "emailLabel", widget: "string", required: false }
-          - { label: "Email mygtukas", name: "contactEmailButtonText", widget: "string", required: false }
-          - { label: "Email aprašymas", name: "emailDescription", widget: "text", required: false }
-          - { label: "Zonos label", name: "areaLabel", widget: "string", required: false }
-          - { label: "Aptarnaujama zona", name: "serviceArea", widget: "string", required: false }
-          - { label: "Grįžti į viršų", name: "backToTopText", widget: "string", required: false }
-          - { label: "Zonos aprašymas", name: "areaDescription", widget: "text", required: false }
-
-          - label: "Telefonai"
-            name: "phoneNumbers"
-            widget: "list"
-            required: false
-            fields:
-              - { label: "Rodomas numeris", name: "label", widget: "string", required: false }
-              - { label: "Tel reikšmė", name: "value", widget: "string", required: false }
-
-          - { label: "El. paštas", name: "emailAddress", widget: "string", required: false }
-
-          - { label: "Footer eyebrow", name: "footerEyebrow", widget: "string", required: false }
-          - { label: "Footer title", name: "footerTitle", widget: "string", required: false }
-          - { label: "Footer aprašymas", name: "footerDescription", widget: "text", required: false }
-          - { label: "Footer note", name: "footerNote", widget: "string", required: false }
-          - { label: "Footer paslaugos title", name: "footerServicesTitle", widget: "string", required: false }
-          - { label: "Footer zona title", name: "footerAreaTitle", widget: "string", required: false }
-          - { label: "Footer zona tekstas", name: "footerAreaText", widget: "text", required: false }
-          - { label: "Footer kontaktai title", name: "footerContactsTitle", widget: "string", required: false }
-          - { label: "Footer apačia kairė", name: "footerBottomLeft", widget: "string", required: false }
-          - { label: "Footer apačia dešinė", name: "footerBottomRight", widget: "string", required: false }
+          - { label: "Pavadinimas", name: "title", widget: "string" }
+          - { label: "Hero title", name: "hero_title", widget: "string" }
+          - { label: "Hero text", name: "hero_text", widget: "text" }
+          - { label: "Telefonas", name: "phone", widget: "string" }
