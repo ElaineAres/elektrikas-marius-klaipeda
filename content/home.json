@@ -15,7 +15,7 @@
   "heroTitleLead": "Profesionalus elektrikas jūsų",
   "heroTitleHighlight": "namams",
   "heroTitleTail": "ir verslui",
-  "heroDescription": "Kokybiški elektros instaliavimo ir remonto darbai Klaipėdoje (Klaipėdos rajone ir miestuose pagal susitarimą). Dirbama tiek su privačiais klientais, tiek su verslu.",
+  "heroDescription": "Kokybiški elektros instaliavimo ir remonto darbai Klaipėdoje, Klaipėdos rajone ir kituose miestuose pagal susitarimą. Dirbama tiek su privačiais klientais, tiek su verslu.",
   "heroChips": [
     "Greitas reagavimas",
     "Garantija darbams",
@@ -65,14 +65,6 @@
   ],
   "statsItems": [
     {
-      "value": "2",
-      "label": "Skambinimo numeriai"
-    },
-    {
-      "value": "3",
-      "label": "Kalbos pasirinkimui"
-    },
-    {
       "value": "Klaipėda",
       "label": "Pagrindinė aptarnavimo zona"
     },
@@ -107,7 +99,7 @@
     }
   ],
   "contactEyebrow": "Kontaktai",
-  "contactTitle": "Reikia elektriko Klaipėdoje (Klaipėdos rajone ir miestuose pagal susitarimą)?",
+  "contactTitle": "Reikia elektriko Klaipėdoje, Klaipėdos rajone ir kituose miestuose pagal susitarimą?",
   "contactDescription": "Skambinkite arba rašykite dėl naujos instaliacijos, skydelių, gedimų šalinimo, remonto ir visų kitų elektros darbų.",
   "phoneLabel": "Telefonas",
   "phoneDescription": "Greitas susisiekimas dėl iškvietimų ir darbų suderinimo.",
@@ -115,9 +107,9 @@
   "contactEmailButtonText": "Rašyti laišką",
   "emailDescription": "Patogu, kai reikia atsiųsti objekto nuotraukas ar užklausą verslui.",
   "areaLabel": "Aptarnaujama zona",
-  "serviceArea": "Klaipėda (Klaipėdos rajonas ir miestai pagal susitarimą)",
+  "serviceArea": "Klaipėda, Klaipėdos rajonas ir kiti miestai pagal susitarimą",
   "backToTopText": "Grįžti į viršų",
-  "areaDescription": "Dirbama Klaipėdoje (Klaipėdos rajone ir miestuose pagal susitarimą).",
+  "areaDescription": "Dirbama Klaipėdoje, Klaipėdos rajone ir kituose miestuose pagal susitarimą.",
   "phoneNumbers": [
     {
       "label": "+370 678 71883",
@@ -132,10 +124,10 @@
   "footerEyebrow": "Elektrikas Klaipėdoje",
   "footerTitle": "Patikimi elektros darbai kasdieniams ir sudėtingiems objektams",
   "footerDescription": "Elektros instaliacija, skydelių montavimas, gedimų šalinimas, remontas ir priežiūra namams bei verslui.",
-  "footerNote": "Klaipėda (Klaipėdos rajonas ir miestai pagal susitarimą)",
+  "footerNote": "Klaipėda, Klaipėdos rajonas ir kiti miestai pagal susitarimą",
   "footerServicesTitle": "Paslaugos",
   "footerAreaTitle": "Aptarnavimo zona",
-  "footerAreaText": "Klaipėda (Klaipėdos rajonas ir miestai pagal susitarimą).",
+  "footerAreaText": "Klaipėda, Klaipėdos rajonas ir kiti miestai pagal susitarimą.",
   "footerContactsTitle": "Kontaktai",
   "footerBottomLeft": "Elektrikas Klaipėdoje. Visos teisės saugomos.",
   "footerBottomRight": "Greitas reagavimas, atsakingas darbas, aiški komunikacija."
