@@ -2,18 +2,106 @@ backend:
   name: github
   repo: ElaineAres/elektrikas-marius-klaipeda
   branch: main
+  base_url: https://oauth.tobulaelektra.lt
+  auth_endpoint: auth
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
-
-locale: "lt"
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "pages"
-    label: "Puslapiai"
+    label: "Pages"
     files:
-      - file: "index.html"
-        label: "Pagrindinis"
+      - file: "content/home.json"
+        label: "Home Page"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Title", name: "metaTitle", widget: "string", required: false }
+          - { label: "Meta Description", name: "metaDescription", widget: "text", required: false }
+          - { label: "Social Description", name: "socialDescription", widget: "text", required: false }
+          - { label: "Brand Title", name: "brandTitle", widget: "string", required: false }
+          - { label: "Brand Subtitle", name: "brandSubtitle", widget: "string", required: false }
+          - { label: "Navigation Services", name: "navServices", widget: "string", required: false }
+          - { label: "Navigation Why", name: "navWhy", widget: "string", required: false }
+          - { label: "Navigation Contact", name: "navContact", widget: "string", required: false }
+          - { label: "Call Text", name: "callText", widget: "string", required: false }
+          - { label: "Call Now Text", name: "callNowText", widget: "string", required: false }
+          - { label: "More Services Text", name: "moreServicesText", widget: "string", required: false }
+          - { label: "Email Button Text", name: "emailButtonText", widget: "string", required: false }
+          - { label: "Hero Eyebrow", name: "heroEyebrow", widget: "string", required: false }
+          - { label: "Hero Title Lead", name: "heroTitleLead", widget: "string", required: false }
+          - { label: "Hero Title Highlight", name: "heroTitleHighlight", widget: "string", required: false }
+          - { label: "Hero Title Tail", name: "heroTitleTail", widget: "string", required: false }
+          - { label: "Hero Description", name: "heroDescription", widget: "text", required: false }
+          - label: "Hero Chips"
+            name: "heroChips"
+            widget: "list"
+            required: false
+            field: { label: "Chip", name: "chip", widget: "string", required: false }
+          - { label: "Showcase Title", name: "showcaseTitle", widget: "string", required: false }
+          - { label: "Showcase Description", name: "showcaseDescription", widget: "text", required: false }
+          - label: "Showcase Cards"
+            name: "showcaseCards"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Text", name: "text", widget: "text", required: false }
+          - { label: "Services Eyebrow", name: "servicesEyebrow", widget: "string", required: false }
+          - { label: "Services Title", name: "servicesTitle", widget: "string", required: false }
+          - { label: "Services Description", name: "servicesDescription", widget: "text", required: false }
+          - label: "Services Items"
+            name: "servicesItems"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Text", name: "text", widget: "text", required: false }
+          - label: "Stats Items"
+            name: "statsItems"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Value", name: "value", widget: "string", required: false }
+              - { label: "Label", name: "label", widget: "string", required: false }
+          - { label: "Why Eyebrow", name: "whyEyebrow", widget: "string", required: false }
+          - { label: "Why Title", name: "whyTitle", widget: "string", required: false }
+          - { label: "Why Description", name: "whyDescription", widget: "text", required: false }
+          - label: "Why Items"
+            name: "whyItems"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Icon", name: "icon", widget: "string", required: false }
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Text", name: "text", widget: "text", required: false }
+          - { label: "Contact Eyebrow", name: "contactEyebrow", widget: "string", required: false }
+          - { label: "Contact Title", name: "contactTitle", widget: "string", required: false }
+          - { label: "Contact Description", name: "contactDescription", widget: "text", required: false }
+          - { label: "Phone Label", name: "phoneLabel", widget: "string", required: false }
+          - { label: "Phone Description", name: "phoneDescription", widget: "text", required: false }
+          - { label: "Email Label", name: "emailLabel", widget: "string", required: false }
+          - { label: "Contact Email Button Text", name: "contactEmailButtonText", widget: "string", required: false }
+          - { label: "Email Description", name: "emailDescription", widget: "text", required: false }
+          - { label: "Area Label", name: "areaLabel", widget: "string", required: false }
+          - { label: "Service Area", name: "serviceArea", widget: "string", required: false }
+          - { label: "Back To Top Text", name: "backToTopText", widget: "string", required: false }
+          - { label: "Area Description", name: "areaDescription", widget: "text", required: false }
+          - label: "Phone Numbers"
+            name: "phoneNumbers"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Display Label", name: "label", widget: "string", required: false }
+              - { label: "Phone Value", name: "value", widget: "string", required: false }
+          - { label: "Email Address", name: "emailAddress", widget: "string", required: false }
+          - { label: "Footer Eyebrow", name: "footerEyebrow", widget: "string", required: false }
+          - { label: "Footer Title", name: "footerTitle", widget: "string", required: false }
+          - { label: "Footer Description", name: "footerDescription", widget: "text", required: false }
+          - { label: "Footer Note", name: "footerNote", widget: "string", required: false }
+          - { label: "Footer Services Title", name: "footerServicesTitle", widget: "string", required: false }
+          - { label: "Footer Area Title", name: "footerAreaTitle", widget: "string", required: false }
+          - { label: "Footer Area Text", name: "footerAreaText", widget: "text", required: false }
+          - { label: "Footer Contacts Title", name: "footerContactsTitle", widget: "string", required: false }
+          - { label: "Footer Bottom Left", name: "footerBottomLeft", widget: "string", required: false }
+          - { label: "Footer Bottom Right", name: "footerBottomRight", widget: "string", required: false }
