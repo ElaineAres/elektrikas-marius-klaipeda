@@ -1617,6 +1617,30 @@
       Object.entries(legacyTranslations).map(([lang, source]) => [lang, normalizeHomeData(mapLegacyContentToHomeData(source), lang)])
     );
 
+    if (translatedHomeData.en) {
+      Object.assign(translatedHomeData.en, normalizeHomeData({
+        ...translatedHomeData.en,
+        heroDescription: "High quality electrical installation and repair work in Klaipeda, Klaipeda district and cities by arrangement. Services are provided for both private clients and business.",
+        contactTitle: "Need an electrician in Klaipeda, Klaipeda district or cities by arrangement?",
+        serviceArea: "Klaipeda, Klaipeda district, cities by arrangement",
+        areaDescription: "Work is provided in Klaipeda, Klaipeda district and cities by arrangement.",
+        footerNote: "Klaipeda • Klaipeda district • cities by arrangement",
+        footerAreaText: "Klaipeda, Klaipeda district and cities by arrangement."
+      }, "en"));
+    }
+
+    if (translatedHomeData.ru) {
+      Object.assign(translatedHomeData.ru, normalizeHomeData({
+        ...translatedHomeData.ru,
+        heroDescription: "Качественные электромонтажные и ремонтные работы в Клайпеде, Клайпедском районе и в городах по договоренности.",
+        contactTitle: "Нужен электрик в Клайпеде, Клайпедском районе или в городах по договоренности?",
+        serviceArea: "Клайпеда, Клайпедский район, города по договоренности",
+        areaDescription: "Работы выполняются в Клайпеде, Клайпедском районе и в городах по договоренности.",
+        footerNote: "Клайпеда • Клайпедский район • города по договоренности",
+        footerAreaText: "Клайпеда, Клайпедский район и города по договоренности."
+      }, "ru"));
+    }
+
     function setText(selector, value) {
       if (typeof value !== "string") return;
       const node = $(selector);
