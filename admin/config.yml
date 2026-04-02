@@ -3,18 +3,17 @@ backend:
   repo: ElaineAres/elektrikas-marius-klaipeda
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+locale: "lt"
 
 collections:
-  - name: "site"
-    label: "Site"
+  - name: "pages"
+    label: "Puslapiai"
     files:
-      - file: "content/site.json"
-        label: "Main content"
-        name: "main"
+      - file: "index.html"
+        label: "Pagrindinis"
+        name: "home"
         fields:
-          - { label: "Pavadinimas", name: "title", widget: "string" }
-          - { label: "Hero title", name: "hero_title", widget: "string" }
-          - { label: "Hero text", name: "hero_text", widget: "text" }
-          - { label: "Telefonas", name: "phone", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
